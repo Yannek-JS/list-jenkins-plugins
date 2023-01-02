@@ -5,8 +5,7 @@
 ##########################################################################
 
 SCRIPT_PATH=$(dirname $(realpath $0))    # full path to the directory where the script is located
-#JENKINS_URL='http://localhost:8080/jenkins'	# URL under which Jenkins is achievable; do not end it with slash
-JENKINS_URL='https://jenkins.yannek.pro/jenkins'	# URL under which Jenkins is achievable; do not end it with slash
+JENKINS_URL='http://localhost:8080/jenkins'	# URL under which Jenkins is achievable; do not end it with slash
 START_TIME=$(date +%F__%T | sed 's/:/-/g')
 GROOVY_LIST_PLUGINS="${SCRIPT_PATH}/list-plugins.groovy"
 PLUGINS_LIST_FILE="${SCRIPT_PATH}/jenkins-plugin-list_${START_TIME}.csv"
